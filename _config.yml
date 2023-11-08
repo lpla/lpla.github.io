@@ -1,12 +1,12 @@
 # Site settings
 title: Leopoldo Pla
-description: Lecturer, developer and researcher at the University of Alicante. Sometimes musician.
+description: Lecturer, developer and researcher. Sometimes musician.
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
 username: Leopoldo Pla Sempere
-user_title: Lecturer & dev @ UAlicante. Sometimes musician.
+user_title: Lecturer & dev. Sometimes musician.
 email: (b64encoded) bGVvcG9sZG9wbGFzZW1wZXJlQGdtYWlsLmNvbQ==
 twitter_username: pacofonix
 github_username: lpla
