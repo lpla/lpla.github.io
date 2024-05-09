@@ -5,20 +5,29 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "gulp"
+    "build:css": "mkdir -p assets/css/ && sass src/styles/:assets/css/ --no-source-map && csso assets/css/main.css --output assets/css/style.min.css",
+    "build:js": "mkdir -p assets/js/ && terser src/js/app.js --output assets/js/main.min.js --compress --mangle",
+    "build:img": "imagemin 'src/img/**/*.{jpg,png,gif,svg}' --out-dir='assets/img'",
+    "build:fonts": "cp -r src/fonts/ assets/css/fonts/",
+    "build:jekyll": "bundle exec jekyll build",
+    "watch:css": "chokidar 'src/styles/**/*.scss' -c 'npm run build:css'",
+    "watch:js": "chokidar 'src/js/**/*.js' -c 'npm run build:js'",
+    "watch:img": "chokidar 'src/img/**/*.{jpg,png,gif,svg}' -c 'npm run build:img'",
+    "watch:fonts": "chokidar 'src/fonts/**/*' -c 'npm run build:fonts'",
+    "watch:html": "chokidar '*.html' '_includes/*.html' '_layouts/*.html' -c 'npm run build:jekyll'",
+    "serve": "browser-sync start --server '_site' --files '_site/**/*.*'",
+    "start": "npm run build:all && npm run serve & npm run watch:all",
+    "watch:all": "npm run watch:css & npm run watch:js & npm run watch:img & npm run watch:fonts & npm run watch:html",
+    "build:all": "mkdir -p assets && npm run build:css && npm run build:js && npm run build:img && npm run build:fonts && npm run build:jekyll"
+  },
+  "dependencies": {
+    "chokidar-cli": "^3.0.0",
+    "csso-cli": "^4.0.2",
+    "imagemin-cli": "^8.0.0",
+    "browser-sync": "^3.0.2",
+    "sass": "^1.77.0",
+    "terser": "^5.31.0"
   },
   "author": "Nathan Randecker",
-  "license": "ISC",
-  "dependencies": {
-    "browser-sync": "^3.0.2",
-    "devicon": "^2.16.0",
-    "gulp": "^5.0.0",
-    "gulp-concat": "^2.6.1",
-    "gulp-csso": "^4.0.1",
-    "gulp-imagemin": "^9.1.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-sass": "^5.1.0",
-    "gulp-uglify": "^3.0.2",
-    "sass": "^1.77.0"
-  }
+  "license": "ISC"
 }

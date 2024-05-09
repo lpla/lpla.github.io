@@ -51,10 +51,11 @@ gplus_username:  lorem_ipsum
 
 In order to compile the assets and run Jekyll on local you need to follow those steps in the root folder:
 
-- Install [NodeJS](https://nodejs.org/), [Ruby](https://www.ruby-lang.org/) and [npm](https://www.npmjs.com/)
-- Install [Jekyll](https://jekyllrb.com): `sudo gem install bundler jekyll`
+- Install [NodeJS](https://nodejs.org/), [Ruby](https://www.ruby-lang.org/) and [npm](https://www.npmjs.com/) (if not installed with nodejs)
+- Install [Jekyll](https://jekyllrb.com): `gem install bundler jekyll`
+- Install Ruby dependencies: `bundle install`
 - Install dependencies: `npm install`
-- Run: `gulp`
+- Run: `npm start`
 
 ## Questions
 
