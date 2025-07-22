@@ -3,7 +3,7 @@
 
 The Theme features:
 
-- Gulp
+- NPM scripts
 - SASS
 - Sweet Scroll
 - Particle.js
