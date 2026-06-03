@@ -2,4 +2,6 @@
 
 ## Reporting a Vulnerability
 
-Let me know if you find a vulnerability. My e-mail address in my résumé. I will try to fix it ASAP.
+Please do not open a public issue for a suspected vulnerability.
+
+Report it privately by email using the address in my CV, and include enough detail to reproduce or understand the impact. I will acknowledge the report and try to fix it as soon as possible.
