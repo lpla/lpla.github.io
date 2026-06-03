@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "build:css": "mkdir -p assets/css/ && sass src/styles/:assets/css/ --no-source-map && csso assets/css/main.css --output assets/css/style.min.css",
-    "build:js": "mkdir -p assets/js/ && terser src/js/app.js --output assets/js/main.min.js --compress --mangle",
+    "build:js": "mkdir -p assets/js/ && terser src/js/vendor/smooth-scroll.min.js src/js/vendor/canvas-bg.min.js src/js/app.js --output assets/js/main.min.js --compress --mangle",
     "build:img": "imagemin 'src/img/**/*.{jpg,png,gif,svg}' --out-dir='assets/img'",
     "build:fonts": "cp -r src/fonts/ assets/css/fonts/",
     "build:jekyll": "bundle exec jekyll build",
