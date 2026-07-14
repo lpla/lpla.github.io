@@ -4,4 +4,4 @@
 
 Please do not open a public issue for a suspected vulnerability.
 
-Report it privately by email using the address in my CV, and include enough detail to reproduce or understand the impact. I will acknowledge the report and try to fix it as soon as possible.
+Use [GitHub's private vulnerability reporting form](https://github.com/lpla/lpla.github.io/security/advisories/new), and include enough detail to reproduce or understand the impact. I will acknowledge the report and try to fix it as soon as possible.
