@@ -13,7 +13,7 @@
     "watch:js": "chokidar 'src/js/**/*.js' -c 'npm run build:js'",
     "watch:fonts": "chokidar 'src/fonts/**/*' -c 'npm run build:fonts'",
     "watch:html": "chokidar '*.html' '_includes/*.html' '_layouts/*.html' -c 'npm run build:jekyll'",
-    "serve": "browser-sync start --server '_site' --files '_site/**/*.*'",
+    "serve": "bundle exec jekyll serve",
     "start": "npm run build:all && npm run serve & npm run watch:all",
     "watch:all": "npm run watch:css & npm run watch:js & npm run watch:fonts & npm run watch:html",
     "build:all": "mkdir -p assets && npm run build:css && npm run build:js && npm run build:fonts && npm run build:jekyll"
@@ -21,7 +21,6 @@
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
     "csso-cli": "^4.0.2",
-    "browser-sync": "^3.0.2",
     "sass": "^1.101.3",
     "terser": "^5.31.0"
   },
