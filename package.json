@@ -22,7 +22,7 @@
     "chokidar-cli": "^3.0.0",
     "csso-cli": "^4.0.2",
     "browser-sync": "^3.0.2",
-    "sass": "^1.77.0",
+    "sass": "^1.101.3",
     "terser": "^5.31.0"
   },
   "author": "Nathan Randecker",
