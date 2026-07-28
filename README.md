@@ -15,6 +15,12 @@ directly.
 
 Publishing is a normal push to the `master` branch.
 
+## Security
+
+The repository intentionally has no third-party package graph or Dependabot
+version-update configuration. GitHub secret scanning and push protection remain
+enabled.
+
 ## License
 
 The original Particle theme and this repository are distributed under the MIT
