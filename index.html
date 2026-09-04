@@ -7,75 +7,60 @@
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Leopoldo Pla</title>
-  <meta name="description" content="Lecturer, developer and researcher. Sometimes musician.">
+  <title>Leopoldo Pla Sempere — Research &amp; Machine Learning Engineer</title>
+  <meta name="description" content="Senior Research and Machine Learning Engineer specializing in NLP, multilingual language data and distributed systems.">
+  <link rel="canonical" href="https://lpla.github.io/">
+  <meta property="og:title" content="Leopoldo Pla Sempere — Research &amp; Machine Learning Engineer">
+  <meta property="og:description" content="NLP, multilingual language data and distributed systems, from web-scale pipelines to production machine learning.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://lpla.github.io/">
+  <meta name="twitter:card" content="summary">
 
-  <link rel="icon" href="/favicon.ico" sizes="16x16 32x32 48x48">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml" sizes="any">
-  <link rel="stylesheet" href="/assets/css/style.min.css">
+  <link rel="icon" href="favicon.ico" sizes="16x16 32x32 48x48">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" sizes="any">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
 </head>
 
   <body>
       <div id="particles-js">
   <div class="header">
-      <h1>
-        <span class="site-title">Leopoldo Pla Sempere</span>
-        <span class="site-description">Lecturer &amp; dev. Sometimes musician.</span>
-      </h1>
+      <h1 class="site-title">Leopoldo Pla Sempere</h1>
+      <h2 class="site-description">Senior Research &amp; Machine Learning Engineer</h2>
+      <p class="site-focus">NLP <span aria-hidden="true">·</span> LLM Data <span aria-hidden="true">·</span> Distributed Systems</p>
+      <div class="header-summary">
+        <p>I build research and production systems for language technology and machine learning, from web-scale data acquisition and processing to Transformer models and memory-constrained software.</p>
+        <p>My experience spans more than a decade: multilingual pipelines processing over 1 PB of web data, production NLP at more than seven million daily queries, open-source language technology and applied ML research.</p>
+      </div>
+      <div class="header-links hero-actions">
+        <a class="link" href="#projects" data-scroll>Selected work</a>
+        <a class="link" target="_blank" rel="noopener noreferrer" href="https://github.com/lpla">GitHub</a>
+        <a class="link" target="_blank" rel="noopener noreferrer" href="CV.pdf">CV</a>
+      </div>
       <div class="header-icons">
-        <a aria-label="Send email" href="mailto:(b64encoded) bGVvcG9sZG9wbGFzZW1wZXJlQGdtYWlsLmNvbQ=="><i class="icon fa fa-envelope"></i></a>
+        <a aria-label="Send email" href="mailto:leopoldoplasempere@gmail.com"><i class="icon fa fa-envelope" aria-hidden="true"></i></a>
         <a aria-label="My Linkedin" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/leopoldoplasempere"><i class="icon fa-brands fa-linkedin" aria-hidden="true"></i></a>
-        <a aria-label="My Github" target="_blank" rel="noopener noreferrer" href="https://github.com/lpla"><i class="icon fa-brands fa-github-alt" aria-hidden="true"></i></a>
-        <a aria-label="My Thingiverse" target="_blank" rel="noopener noreferrer" href="https://www.thingiverse.com/lpla"><i class="icon fa fa-print" aria-hidden="true"></i></a>
-        <a aria-label="My OSH Park" target="_blank" rel="noopener noreferrer" href="https://oshpark.com/profiles/lpla"><i class="icon fa fa-gear" aria-hidden="true"></i></a>
-      </div>
-      <div class="header-icons">
-        <a aria-label="My Bluesky" target="_blank" rel="noopener noreferrer" href="https://bsky.app/profile/lpla.bsky.social"><i class="icon fa-brands fa-bluesky" aria-hidden="true"></i></a>
-        <a aria-label="My Youtube" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/user/Leopoldopla"><i class="icon fa-brands fa-youtube" aria-hidden="true"></i></a>
-      </div>
-      <div class="header-links">
-        <a class="link" href="#about" data-scroll>About me</a>
-        <a class="link" href="#projects" data-scroll>Projects</a>
-        <a class="link" href="#cv" data-scroll>CV</a>
       </div>
   </div>
-  <a class="down" href="#about" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+  <a class="down" href="#about" aria-label="Explore my areas of expertise" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
 
       <section id="about">
-        <div class="user-details">
-  <h1> My Expertise </h1>
-  <p>Hi, I'm Leo—a software engineer and lecturer from Spain. I build reliable software, teach people how it works, and spend the rest of my time making music or tinkering with hardware.</p>
-  <p>My work moves between web products, data pipelines and applied AI. I like turning fuzzy ideas into useful prototypes, then refining them into clear, well-documented systems with as little accidental complexity as possible.</p>
-  <p>Curiosity ties it all together. I've taught AI and software engineering for more than nine years, researched language and music technologies, and still happily disappear into Game Boy hardware, homegrown PCBs, a 3D printer or a jazz gig.</p>
+<div class="user-details">
+  <h1> What I work on </h1>
 </div>
 <div class="user">
   <div class="tech">
-    <h2>Web &amp; Products</h2>
-    <i class="devicon-html5-plain colored"></i>
-    <i class="devicon-amazonwebservices-plain colored"></i>
-    <i class="devicon-bootstrap-plain colored"></i>
-    <i class="devicon-illustrator-plain colored"></i>
-    <i class="devicon-nodejs-plain colored"></i>
-    <p>I design and build friendly interfaces, practical APIs and prototypes that are simple to use and easy to maintain.</p>
+    <h2>Language data at scale</h2>
+    <p>Web crawling, multilingual text extraction, filtering, alignment and data quality for NLP and language-model training. I have designed and operated distributed pipelines over Common Crawl and other web corpora at petabyte scale.</p>
   </div>
   <div class="tech">
-    <h2>Software &amp; AI</h2>
-    <i class="devicon-python-plain colored"></i>
-    <i class="devicon-java-plain colored"></i>
-    <i class="devicon-c-plain colored"></i>
-    <i class="devicon-go-plain colored"></i>
-    <i class="devicon-rust-original colored"></i>
-    <p>From compact tools to distributed data pipelines, I work across languages and use AI where it solves a real problem.</p>
+    <h2>Machine learning research &amp; engineering</h2>
+    <p>NLP, Transformers, information retrieval and multimodal problems, from experimentation and evaluation to maintainable production systems.</p>
   </div>
   <div class="tech">
-    <h2>How I Work</h2>
-    <i class="devicon-git-plain colored"></i>
-    <i class="devicon-trello-plain colored"></i>
-    <i class="devicon-visualstudio-plain colored"></i>
-    <i class="devicon-pycharm-plain colored"></i>
-    <i class="devicon-pytorch-original colored"></i>
-    <p>Clear code, useful documentation, sensible security and honest collaboration—enough process to help a team, never to slow it down.</p>
+    <h2>Systems &amp; open source</h2>
+    <p>Python and C++ engineering, distributed computing and HPC workloads, constrained-memory systems, reproducible testing and long-term open-source development.</p>
   </div>
 
 </div>
@@ -83,153 +68,115 @@
       </section>
       <section id="projects">
         <div class="user-details">
-  <h1> Featured Projects </h1>
+  <h1> Selected work </h1>
 </div>
 <div class="user-projects">
-  <div class="images-left">
-    <img alt="CrossPoint boot screen on an X4" src="/assets/img/crosspoint-x4-boot.png" />
+  <div class="images-left project-logo-pair">
+    <img alt="ParaCrawl" src="assets/img/paracrawl.jpg" />
+    <img alt="MaCoCu" src="assets/img/macocu.svg" />
   </div>
   <div class="contents-right">
-    <h3> CrossPoint Reader </h3>
-    <p>CrossPoint is community-built, fully hackable open-source firmware for ESP32-C3-based Xteink X3 and X4 e-readers. As a project maintainer, I contribute improvements across EPUB rendering, stability, performance and localization.</p>
-    <a class="project-link" href="https://github.com/crosspoint-reader/crosspoint-reader">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="caramel" src="/assets/img/logo-caramel.png" />
-  </div>
-  <div class="contents-left">
-    <h3> CARAMEL </h3>
-    <p>CARAMEL is a research and innovation project funded under Horizon Europe. It aims to develop an AI-driven, personalized prevention model tailored to the unique cardiovascular health needs of women aged 40-60, particularly during the menopausal transition, when CVD risk rises significantly.</p>
-    <a class="project-link" href="https://caramel-project.eu/">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="incibe" src="/assets/img/logo-incibe.png" />
-  </div>
-  <div class="contents-right">
-    <h3> CRYPTOTRACK </h3>
-    <p>CRYPTOTRACK is a system developed by Treelogic to monitor and detect illicit activities in cryptocurrency transactions. This project was part of the first call of the Strategic Initiative for Innovative Public Procurement (IECPI) by the National Institute of Cybersecurity (INCIBE).</p>
-    <a class="project-link" href="https://www.incibe.es/index.php/industria-cpi/tree-technology-sa">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="stream" src="/assets/img/communitas.png" />
-  </div>
-  <div class="contents-left">
-    <h3> COMMUNITAS </h3>
-    <p>COMMUNITAS principal goal is to pave the way for the empowerment and engagement of different types of consumers and prosumers, placing them at the heart of energy markets. It will do so by boosting the creation and exploiting the potentialities of ECs as hubs for innovative energy services, integrated with non-energy benefits, co-created together with citizens and other stakeholders.</p>
-    <a class="project-link" href="https://communitas-project.eu/">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="moderate" src="/assets/img/moderate.png" />
-  </div>
-  <div class="contents-right">
-    <h3> MODERATE </h3>
-    <p>MODERATE aims to connect data providers with other building stakeholders by improving interoperability between datasets, by making use of data from different providers and aims to develop services based on data analytics that can transform raw data into knowledge for end-users.</p>
-    <a class="project-link" href="https://moderate-project.eu/">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="stream" src="/assets/img/stream.png" />
-  </div>
-  <div class="contents-left">
-    <h3> STREAM </h3>
-    <p>The STREAM project aims to create an innovative and robust flexibility ecosystem on the low voltage grid side of existing power markets connecting data, technologies, stakeholders and markets, thus facilitating the flexibility provision.</p>
-    <a class="project-link" href="https://stream-he-project.eu/">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="ineexs" src="/assets/img/ineexs.png" />
-  </div>
-  <div class="contents-right">
-    <h3> InEExS </h3>
-    <p>InEExs proposes Innovative Energy (Efficiency) Service Models for Sector Integration. The project aims to acilitate the implementation of sector-integrating smart energy services and the deployment of a wide range of sustainable technologies, such as renewables, EV, heat pumps, IoT controls and other energy efficiency measures.</p>
-    <a class="project-link" href="https://ieecp.org/projects/ineexs/">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="multiscore" src="/assets/img/multiscore.png" />
-  </div>
-  <div class="contents-left">
-    <h3> MultiScore </h3>
-    <p>MultiScore proposes the development of neural models that leverage large data sets to learn both OMR and AMT holistically (end-to-end) under a common framework for transcribing music.</p>
-    <a class="project-link" href="https://sites.google.com/view/multiscore-project">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="macocu" src="/assets/img/macocu.svg" />
-  </div>
-  <div class="contents-right">
-    <h3> MaCoCu </h3>
-    <p>MaCoCu focuses on collecting monolingual and parallel data from the Internet, specially for under-resourced languages and DSI-specific data.</p>
-    <a class="project-link" href="https://macocu.eu">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="pcb" src="/assets/img/pcb.png" />
-  </div>
-  <div class="contents-left">
-    <h3> lpla/gb-pcbs </h3>
-    <p>Delving into the world of gaming hardware, this project provides open-source designs for Game Boy-related hardware, making advanced DIY tech accessible to enthusiasts and creators worldwide through services like OSH Park or PCB Way.</p>
-    <a class="project-link" href="https://github.com/lpla/gb-pcbs">Check it out</a>
-  </div>
-</div>
-<div class="user-projects">
-    <div class="images-left">
-      <img alt="bitextor" src="/assets/img/bitextor.png" />
-    </div>
-    <div class="contents-right">
-      <h3> Bitextor </h3>
-      <p>Bitextor generates translation memories from multilingual websites or WARC files. A complete pipeline optimized for high-performance and distributed environments.</p>
-      <a class="project-link" href="https://github.com/bitextor/bitextor/">Check it out</a>
+    <h3> ParaCrawl &amp; MaCoCu </h3>
+    <p class="project-kicker">Web-scale multilingual data pipelines <span aria-hidden="true">·</span> &gt;1 PB processed</p>
+    <p>I led engineering for large-scale pipelines that acquired, processed and curated multilingual web data for machine translation and language-model research.</p>
+    <p>My work covered crawling, Common Crawl and WARC processing, distributed execution, text extraction, language identification, alignment and data cleaning across HPC and cloud infrastructure with international research partners.</p>
+    <p class="project-facts"><strong>Focus:</strong> multilingual NLP <span aria-hidden="true">·</span> web data <span aria-hidden="true">·</span> distributed computing <span aria-hidden="true">·</span> data quality<br><strong>Stack:</strong> Python <span aria-hidden="true">·</span> C++ <span aria-hidden="true">·</span> Snakemake <span aria-hidden="true">·</span> HPC and cloud <span aria-hidden="true">·</span> Common Crawl <span aria-hidden="true">·</span> WARC</p>
+    <div class="project-links">
+      <a class="project-link" href="https://paracrawl.eu">ParaCrawl</a>
+      <a class="project-link" href="https://macocu.eu">MaCoCu</a>
     </div>
   </div>
+</div>
 <div class="user-projects">
   <div class="images-right">
-    <img alt="paracrawl" src="/assets/img/paracrawl.jpg" />
+    <img alt="Bitextor" src="assets/img/bitextor.png" />
   </div>
-  <div class="contents">
-    <h3> Paracrawl </h3>
-    <p>Crawling thousands of websites, added to the Internet Archive data and processing all efficiently with open-source software to create a huge, powerful and heterogeneus parallel corpus for Machine Translation systems and Large Language Models.</p>
-    <a class="project-link" href="https://paracrawl.eu">Check it out</a>
+  <div class="contents-left">
+    <h3> Bitextor </h3>
+    <p class="project-kicker">Open-source pipeline for multilingual web data</p>
+    <p>I worked as a core developer and maintainer of Bitextor, an open-source system for harvesting, extracting, aligning and cleaning multilingual web content from a single machine to distributed computing environments.</p>
+    <p>The project has been used in large European language-data initiatives including ParaCrawl and MaCoCu and combines web processing, NLP, orchestration and high-performance computing.</p>
+    <p class="project-facts"><strong>Focus:</strong> crawling <span aria-hidden="true">·</span> text extraction <span aria-hidden="true">·</span> language identification <span aria-hidden="true">·</span> alignment <span aria-hidden="true">·</span> filtering<br><strong>Stack:</strong> Python <span aria-hidden="true">·</span> C++ <span aria-hidden="true">·</span> Bash <span aria-hidden="true">·</span> Snakemake <span aria-hidden="true">·</span> distributed systems <span aria-hidden="true">·</span> HPC</p>
+    <a class="project-link" href="https://github.com/bitextor/bitextor/">View on GitHub</a>
   </div>
 </div>
 <div class="user-projects">
   <div class="images-left">
-    <img alt="context" src="/assets/img/context.png" />
+    <img alt="Reverso Context" src="assets/img/context.png" />
   </div>
   <div class="contents-right">
     <h3> Reverso Context </h3>
-    <p>The most advanced and fast parallel corpora search tool, finding aligned documents and sentences from many public resources at unprecedented speeds, with several million page-views every day and deeply integrated into Reverso ecosystem.</p>
-    <a class="project-link" href="https://context.reverso.net/">Check it out</a>
+    <p class="project-kicker">Production NLP and search <span aria-hidden="true">·</span> &gt;7M daily queries</p>
+    <p>I contributed to the data and retrieval pipelines behind Reverso Context, improving search accuracy for multilingual examples drawn from aligned corpora.</p>
+    <p>The production NLP system operated at more than seven million daily queries as part of the wider Reverso product ecosystem.</p>
+    <p class="project-facts"><strong>Focus:</strong> multilingual NLP <span aria-hidden="true">·</span> information retrieval <span aria-hidden="true">·</span> parallel corpora <span aria-hidden="true">·</span> production scale</p>
+    <a class="project-link" href="https://context.reverso.net/">Visit Reverso Context</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-right">
+    <img alt="MultiScore" src="assets/img/multiscore.png" />
+  </div>
+  <div class="contents-left">
+    <h3> MultiScore </h3>
+    <p class="project-kicker">Transformer-based music transcription</p>
+    <p>I led the engineering work for MultiScore, a research project developing Transformer-based models for optical and audio music transcription within a shared end-to-end framework.</p>
+    <p>The project brought machine learning research, evaluation and music-domain knowledge together to turn score images and musical audio into structured notation.</p>
+    <p class="project-facts"><strong>Focus:</strong> Transformers <span aria-hidden="true">·</span> multimodal ML <span aria-hidden="true">·</span> optical music recognition <span aria-hidden="true">·</span> automatic music transcription</p>
+    <a class="project-link" href="https://sites.google.com/view/multiscore-project">Visit the project</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-left">
+    <img alt="CrossPoint boot screen on an X4" src="assets/img/crosspoint-x4-boot.png" />
+  </div>
+  <div class="contents-right">
+    <h3> CrossPoint Reader </h3>
+    <p class="project-kicker">Systems and open-source engineering</p>
+    <p>CrossPoint is community-built, fully hackable open-source firmware for ESP32-C3-based Xteink X3 and X4 e-readers. My work as a project maintainer has included EPUB rendering, constrained-memory reliability, performance, testing and localization.</p>
+    <p class="project-facts"><strong>Focus:</strong> embedded C++ <span aria-hidden="true">·</span> parsing <span aria-hidden="true">·</span> constrained-memory systems <span aria-hidden="true">·</span> testing</p>
+    <a class="project-link" href="https://github.com/crosspoint-reader/crosspoint-reader">View on GitHub</a>
+  </div>
+</div>
+<div class="user-projects">
+  <div class="images-right project-logo-pair">
+    <img alt="CARAMEL" src="assets/img/logo-caramel.png" />
+    <img alt="CRYPTOTRACK" src="assets/img/logo-incibe.png" />
+  </div>
+  <div class="contents-left">
+    <h3> CARAMEL &amp; CRYPTOTRACK </h3>
+    <p class="project-kicker">Applied AI research and development</p>
+    <p>My work at Treelogic has included two AI initiatives: CARAMEL, exploring personalized cardiovascular risk assessment for women during the menopausal transition; and CRYPTOTRACK, monitoring cryptocurrency transactions to detect illicit activity.</p>
+    <div class="project-links">
+      <a class="project-link" href="https://caramel-project.eu/">CARAMEL</a>
+      <a class="project-link" href="https://www.incibe.es/index.php/industria-cpi/tree-technology-sa">CRYPTOTRACK</a>
+    </div>
+  </div>
+</div>
+<div class="other-work">
+  <h2>Other projects</h2>
+  <div class="other-projects">
+    <a href="https://communitas-project.eu/"><img alt="" src="assets/img/communitas.png"><span>COMMUNITAS</span></a>
+    <a href="https://moderate-project.eu/"><img alt="" src="assets/img/moderate.png"><span>MODERATE</span></a>
+    <a href="https://stream-he-project.eu/"><img alt="" src="assets/img/stream.png"><span>STREAM</span></a>
+    <a href="https://ieecp.org/projects/ineexs/"><img alt="" src="assets/img/ineexs.png"><span>InEExS</span></a>
+    <a href="https://github.com/lpla/gb-pcbs"><img alt="" src="assets/img/pcb.png"><span>Open hardware</span></a>
   </div>
 </div>
 
       </section>
       <section id="cv">
-        <div class="user-resume">
+<div class="user-resume">
   <h1> CV </h1>
-  <p> If you want to know more about me or my work, take a look at my CV: </p>
-  <a class="project-link" aria-label="My CV" target="_blank" rel="noopener noreferrer" href="https://lpla.github.io/CV.pdf">Vita 📃</a>
+  <p>Detailed experience, education and selected publications are available in my CV.</p>
+  <a class="project-link" aria-label="View my CV" target="_blank" rel="noopener noreferrer" href="CV.pdf">View CV</a>
 </div>
 
       </section>
 
       <footer class="footer">
-    <p>&copy; Leopoldo Pla Sempere</p>
-    <p>Site source and <span class="love">❤</span> at <a href="https://github.com/lpla/lpla.github.io">GitHub</a></p>
+    <p>&copy; Leopoldo Pla Sempere <span aria-hidden="true">·</span> <a href="https://github.com/lpla/lpla.github.io">Source on GitHub</a></p>
 </footer>
-<script src="/assets/js/main.min.js"></script>
+<script src="assets/js/main.min.js"></script>
 
   </body>
