@@ -9,12 +9,12 @@
 
   <title>Leopoldo Pla Sempere — Research &amp; Machine Learning Engineer</title>
   <meta name="description"
-        content="Senior Research and Machine Learning Engineer working on NLP, LLM data, multilingual web data and distributed systems.">
+        content="Research and ML engineering for multilingual training data: web crawling, text extraction, distributed pipelines and open-source systems.">
   <link rel="canonical" href="https://lpla.github.io/">
   <meta property="og:title"
         content="Leopoldo Pla Sempere — Research &amp; Machine Learning Engineer">
   <meta property="og:description"
-        content="NLP, LLM data, multilingual web data and distributed systems, from web-scale pipelines to production machine learning.">
+        content="Multilingual training data, web crawling and ML systems. Selected engineering work on ParaCrawl, MaCoCu, DataTrove and CrossPoint.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://lpla.github.io/">
 
@@ -30,7 +30,7 @@
   <meta name="twitter:title"
         content="Leopoldo Pla Sempere — Research &amp; Machine Learning Engineer">
   <meta name="twitter:description"
-        content="NLP, multilingual web data and distributed systems, from web-scale pipelines to production machine learning.">
+        content="Multilingual training data, web crawling and ML systems. Selected engineering work with code, publications and technical decisions.">
   <meta name="twitter:image"
         content="https://lpla.github.io/assets/img/portfolio-og.png">
 
@@ -45,10 +45,10 @@
   <div class="header">
       <h1 class="site-title">Leopoldo Pla Sempere</h1>
       <h2 class="site-description">Senior Research &amp; Machine Learning Engineer</h2>
-      <p class="site-focus">NLP <span aria-hidden="true">·</span> LLM Data <span aria-hidden="true">·</span> Distributed Systems</p>
+      <p class="site-focus">Multilingual Training Data <span aria-hidden="true">·</span> Web Crawling <span aria-hidden="true">·</span> ML Systems</p>
       <div class="header-summary">
-        <p>I build research and production systems for language technology and machine learning, from web-scale data acquisition and processing to Transformer models and memory-constrained software.</p>
-        <p>My experience spans more than a decade: multilingual pipelines processing over 1 PB of web data, production NLP at more than seven million daily queries, open-source language technology and applied ML research.</p>
+        <p>I build multilingual data pipelines for machine learning: crawling the web, extracting usable text and making processing reliable at scale.</p>
+        <p>My work spans ParaCrawl and MaCoCu, production NLP, Transformer-based music transcription and open-source systems.</p>
       </div>
       <div class="header-links hero-actions">
         <a class="link" href="#projects" data-scroll>Selected work</a>
@@ -60,112 +60,98 @@
         <a aria-label="My Linkedin" target="_blank" rel="noopener noreferrer" href="https://linkedin.com/in/leopoldoplasempere"><i class="icon fa-brands fa-linkedin" aria-hidden="true"></i></a>
       </div>
   </div>
-  <a class="down" href="#about" aria-label="Explore my areas of expertise" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+  <a class="down" href="#projects" aria-label="Explore selected engineering work" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
 </div>
 
-      <section id="about">
-<div class="user-details">
-  <h1> What I work on </h1>
-</div>
-<div class="user">
-  <div class="tech">
-    <h2>Language data at scale</h2>
-    <p>Web crawling, multilingual text extraction, filtering, alignment and data quality for NLP and language-model training. I have designed and operated distributed pipelines over Common Crawl and other web corpora at petabyte scale.</p>
-  </div>
-  <div class="tech">
-    <h2>Machine learning research &amp; engineering</h2>
-    <p>NLP, Transformers, information retrieval and multimodal problems, from experimentation and evaluation to maintainable production systems.</p>
-  </div>
-  <div class="tech">
-    <h2>Systems &amp; open source</h2>
-    <p>Python and C++ engineering, distributed computing and HPC workloads, constrained-memory systems, reproducible testing and long-term open-source development.</p>
-  </div>
-
-</div>
-
-      </section>
       <section id="projects">
         <div class="user-details">
   <h1> Selected work </h1>
 </div>
-<div class="user-projects">
+<div class="user-projects" id="language-data">
   <div class="images-left project-logo-pair">
     <img alt="ParaCrawl" src="assets/img/paracrawl.jpg" />
     <img alt="MaCoCu" src="assets/img/macocu.svg" />
   </div>
   <div class="contents-right">
-    <h3> ParaCrawl &amp; MaCoCu </h3>
-    <p class="project-kicker">Web-scale multilingual data pipelines <span aria-hidden="true">·</span> &gt;1 PB processed</p>
-    <p>I led engineering for large-scale pipelines that acquired, processed and curated multilingual web data for machine translation and language-model research.</p>
-    <p>My work covered crawling, Common Crawl and WARC processing, distributed execution, text extraction, language identification, alignment and data cleaning across HPC and cloud infrastructure with international research partners.</p>
-    <p class="project-facts"><strong>Focus:</strong> multilingual NLP <span aria-hidden="true">·</span> web data <span aria-hidden="true">·</span> distributed computing <span aria-hidden="true">·</span> data quality<br><strong>Stack:</strong> Python <span aria-hidden="true">·</span> C++ <span aria-hidden="true">·</span> Snakemake <span aria-hidden="true">·</span> HPC and cloud <span aria-hidden="true">·</span> Common Crawl <span aria-hidden="true">·</span> WARC</p>
+    <h3>ParaCrawl &amp; MaCoCu</h3>
+    <p class="project-kicker">Multilingual data engineering <span aria-hidden="true">·</span> 2017–2023</p>
+    <p>I led engineering for multilingual web-data pipelines that processed over 1 PB of Common Crawl and other web data on HPC and cloud infrastructure, producing public corpora for machine translation and language-model research.</p>
+    <p>As a core developer and maintainer of <strong>Bitextor</strong> and co-developer of <strong>Monotextor</strong>, I worked on the path from crawling and WARC ingestion to text extraction, language identification, alignment and cleaning. Bitextor produces parallel corpora; Monotextor focuses on monolingual text.</p>
+    <ul class="contribution-list">
+      <li><a href="https://github.com/bitextor/bitextor/pull/128">Checkpoint-capable crawling and incremental recrawling</a>: integrated Heritrix and document hashes to avoid reprocessing previously seen content.</li>
+      <li><a href="https://github.com/bitextor/bitextor/pull/203">Workflow restructuring</a>: reorganized the Snakemake pipeline as part of Bitextor 8.0.</li>
+      <li><a href="https://github.com/bitextor/bitextor/pull/252">Alignment correctness</a>: revised L2 normalization in the TF-IDF document aligner.</li>
+    </ul>
     <div class="project-links">
-      <a class="project-link" href="https://paracrawl.eu">ParaCrawl</a>
-      <a class="project-link" href="https://macocu.eu">MaCoCu</a>
+      <a class="project-link" href="https://github.com/bitextor/bitextor">Bitextor</a>
+      <a class="project-link" href="https://github.com/bitextor/monotextor">Monotextor</a>
+      <a class="project-link" href="https://github.com/bitextor/warc2text">warc2text</a>
     </div>
+    <p class="project-evidence">Publications: <a href="https://aclanthology.org/2020.acl-main.417/">ParaCrawl (ACL 2020)</a> <span aria-hidden="true">·</span> <a href="https://aclanthology.org/2023.eamt-1.55/">MaCoCu (EAMT 2023)</a></p>
   </div>
 </div>
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="Bitextor" src="assets/img/bitextor.png" />
+<div class="user-projects" id="datatrove">
+  <div class="images-right technical-note">
+    <p class="note-label">Deduplication across implementations</p>
+    <p class="note-title">Rust <span aria-hidden="true">↔</span> Python</p>
+    <p>Deterministic cluster IDs<br>Binary-format compatibility<br>Historical-index semantics</p>
   </div>
   <div class="contents-left">
-    <h3> Bitextor </h3>
-    <p class="project-kicker">Open-source pipeline for multilingual web data</p>
-    <p>I was a core developer and maintainer of Bitextor, an open-source system for harvesting, extracting, aligning and cleaning multilingual web content from a single machine to distributed computing environments.</p>
-    <p>The project has been used in large European language-data initiatives including ParaCrawl and MaCoCu and combines web processing, NLP, orchestration and high-performance computing.</p>
-    <p>I also co-developed Monotextor, its monolingual counterpart for harvesting and curating web corpora, covering WARC/web ingestion, text extraction, language identification, cleaning and deduplication.</p>
-    <p class="project-facts"><strong>Focus:</strong> crawling <span aria-hidden="true">·</span> text extraction <span aria-hidden="true">·</span> language identification <span aria-hidden="true">·</span> alignment <span aria-hidden="true">·</span> filtering<br><strong>Stack:</strong> Python <span aria-hidden="true">·</span> C++ <span aria-hidden="true">·</span> Bash <span aria-hidden="true">·</span> Snakemake <span aria-hidden="true">·</span> distributed systems <span aria-hidden="true">·</span> HPC</p>
-    <a class="project-link" href="https://github.com/bitextor/bitextor/">View on GitHub</a>
+    <h3>DataTrove</h3>
+    <p class="project-kicker">Training-data tooling <span aria-hidden="true">·</span> Contribution proposal</p>
+    <p>I proposed cluster-ID output for DataTrove’s Rust MinHash stage so the existing Python pipeline can consume its metadata. The change numbers components deterministically, independently of the union-find root, while preserving historical-index semantics.</p>
+    <p>The proposal includes Rust tests and Python interoperability checks, with S3 behavior exercised through Moto.</p>
+    <p>I also <a href="https://github.com/huggingface/datatrove/issues/521">isolated two initialization failures in the ReadabilityInscriptis extractor</a>, separating dependency validation from the sandbox’s empty-input warmup.</p>
+    <a class="project-link" href="https://github.com/huggingface/datatrove/pull/520">Read the proposal and review</a>
   </div>
 </div>
-<div class="user-projects">
+<div class="user-projects" id="multiscore">
+  <div class="images-left">
+    <img alt="MultiScore" src="assets/img/multiscore.png" />
+  </div>
+  <div class="contents-right">
+    <h3>MultiScore</h3>
+    <p class="project-kicker">Transformer-based music transcription</p>
+    <p>I led engineering for a research project developing Transformer-based models for optical and audio music transcription within a shared end-to-end framework.</p>
+    <p>The task was to turn score images and musical audio into structured notation, bringing together model experimentation, evaluation and music-domain knowledge.</p>
+    <a class="project-link" href="https://sites.google.com/view/multiscore-project">Project and research</a>
+  </div>
+</div>
+<div class="user-projects" id="crosspoint">
+  <div class="images-right">
+    <img alt="CrossPoint boot screen on an X4" src="assets/img/crosspoint-x4-boot.png" />
+  </div>
+  <div class="contents-left">
+    <h3>CrossPoint Reader</h3>
+    <p class="project-kicker">C++ systems with tight memory limits</p>
+    <p>I maintain open-source firmware for Xteink e-readers, working on EPUB rendering, parsers, image decoding and regression testing.</p>
+    <p>For <a href="https://github.com/crosspoint-reader/crosspoint-reader/pull/2654">EPUB tables</a>, I implemented a bounded row buffer and simple column layout. Complex or narrow rows fall back to a readable flow, preserving their content. The contribution documents memory and firmware comparisons, regression tests and device checks.</p>
+    <p>Other merged work includes <a href="https://github.com/crosspoint-reader/crosspoint-reader/pull/2332">grouping image buffers by lifetime and handling allocation failure</a>, and <a href="https://github.com/crosspoint-reader/crosspoint-reader/pull/2925">fixing progressive JPEGs with separate component scans</a>.</p>
+    <a class="project-link" href="https://github.com/crosspoint-reader/crosspoint-reader">Explore the firmware</a>
+  </div>
+</div>
+<div class="user-projects" id="reverso">
   <div class="images-left">
     <img alt="Reverso Context" src="assets/img/context.png" />
   </div>
   <div class="contents-right">
-    <h3> Reverso Context </h3>
-    <p class="project-kicker">Production NLP and search <span aria-hidden="true">·</span> &gt;7M daily queries</p>
-    <p>I contributed to the data and retrieval pipelines behind Reverso Context, improving search accuracy for multilingual examples drawn from aligned corpora.</p>
-    <p>The production NLP system served more than seven million queries per day as part of the wider Reverso product ecosystem.</p>
-    <p class="project-facts"><strong>Focus:</strong> multilingual NLP <span aria-hidden="true">·</span> information retrieval <span aria-hidden="true">·</span> parallel corpora <span aria-hidden="true">·</span> production scale</p>
+    <h3>Reverso Context</h3>
+    <p class="project-kicker">Production NLP and retrieval <span aria-hidden="true">·</span> 2015–2017</p>
+    <p>At Prompsit, I contributed to the data and retrieval pipelines behind Reverso Context, improving retrieval of multilingual examples from aligned corpora.</p>
+    <p>The product served more than seven million queries per day. My contribution was to its data and retrieval infrastructure within the wider Reverso ecosystem.</p>
     <a class="project-link" href="https://context.reverso.net/">Visit Reverso Context</a>
   </div>
 </div>
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="MultiScore" src="assets/img/multiscore.png" />
-  </div>
-  <div class="contents-left">
-    <h3> MultiScore </h3>
-    <p class="project-kicker">Transformer-based music transcription</p>
-    <p>I led the engineering work for MultiScore, a research project developing Transformer-based models for optical and audio music transcription within a shared end-to-end framework.</p>
-    <p>The project brought machine learning research, evaluation and music-domain knowledge together to turn score images and musical audio into structured notation.</p>
-    <p class="project-facts"><strong>Focus:</strong> Transformers <span aria-hidden="true">·</span> multimodal ML <span aria-hidden="true">·</span> optical music recognition <span aria-hidden="true">·</span> automatic music transcription</p>
-    <a class="project-link" href="https://sites.google.com/view/multiscore-project">Visit the project</a>
-  </div>
-</div>
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="CrossPoint boot screen on an X4" src="assets/img/crosspoint-x4-boot.png" />
-  </div>
-  <div class="contents-right">
-    <h3> CrossPoint Reader </h3>
-    <p class="project-kicker">Systems and open-source engineering</p>
-    <p>CrossPoint is community-built, fully hackable open-source firmware for ESP32-C3-based Xteink X3 and X4 e-readers. My work as a project maintainer has included EPUB rendering, constrained-memory reliability, performance, testing and localization.</p>
-    <p class="project-facts"><strong>Focus:</strong> embedded C++ <span aria-hidden="true">·</span> parsing <span aria-hidden="true">·</span> constrained-memory systems <span aria-hidden="true">·</span> testing</p>
-    <a class="project-link" href="https://github.com/crosspoint-reader/crosspoint-reader">View on GitHub</a>
-  </div>
-</div>
-<div class="user-projects">
+<div class="user-projects" id="applied-ai">
   <div class="images-right project-logo-pair">
     <img alt="CARAMEL" src="assets/img/logo-caramel.png" />
     <img alt="CRYPTOTRACK" src="assets/img/logo-incibe.png" />
   </div>
   <div class="contents-left">
-    <h3> CARAMEL &amp; CRYPTOTRACK </h3>
-    <p class="project-kicker">Applied AI research and development</p>
-    <p>My work at Treelogic has included two AI initiatives: CARAMEL, exploring personalized cardiovascular risk assessment for women during the menopausal transition; and CRYPTOTRACK, monitoring cryptocurrency transactions to detect illicit activity.</p>
+    <h3>Applied AI at Treelogic</h3>
+    <p class="project-kicker">Data access and reusable ingestion infrastructure</p>
+    <p>My work on CARAMEL and CRYPTOTRACK includes authenticated backend access to Trino/Delta Lake and integration with Airflow, Spark and MinIO.</p>
+    <p>I develop shared Python components for S3 ingestion and scraping, covering paginated discovery, validation and automated tests. The projects address cardiovascular risk assessment and analysis of cryptocurrency transactions.</p>
     <div class="project-links">
       <a class="project-link" href="https://caramel-project.eu/">CARAMEL</a>
       <a class="project-link" href="https://www.incibe.es/index.php/industria-cpi/tree-technology-sa">CRYPTOTRACK</a>
@@ -173,7 +159,10 @@
   </div>
 </div>
 <div class="other-work">
-  <h2>Other projects</h2>
+  <h2>Beyond the pipeline</h2>
+  <p class="personal-note">I teach programming and software engineering at the University of Alicante. Outside work, I make music and build retrocomputing hardware, including tools that connect Game Boys and MIDI.</p>
+  <p><a href="https://github.com/lpla/synccross">Game Boy music hardware</a> <span aria-hidden="true">·</span> <a href="https://github.com/lpla/gb-pcbs">PCB projects</a></p>
+  <h3>Other collaborative projects</h3>
   <div class="other-projects">
     <a href="https://communitas-project.eu/"><img alt="" src="assets/img/communitas.png"><span>COMMUNITAS</span></a>
     <a href="https://moderate-project.eu/"><img alt="" src="assets/img/moderate.png"><span>MODERATE</span></a>

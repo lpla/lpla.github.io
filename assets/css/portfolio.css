@@ -1,4 +1,74 @@
 /* Focused overrides for the professional portfolio content. */
+#particles-js {
+  position: relative;
+  min-height: 0;
+  align-items: center;
+  padding: 4rem 0 4.5rem;
+}
+
+#particles-js .particles-js-canvas-el {
+  position: absolute;
+  inset: 0;
+  height: 100% !important;
+}
+
+#particles-js .header {
+  position: relative;
+  top: auto;
+  left: auto;
+  transform: none;
+}
+
+#particles-js .down {
+  z-index: 1;
+}
+
+.contribution-list {
+  padding-left: 1.2rem;
+}
+
+.contribution-list li {
+  margin-bottom: 0.65rem;
+}
+
+#projects a:not(.project-link) {
+  color: #0b535a;
+  text-underline-offset: 0.18em;
+}
+
+.project-evidence {
+  font-size: 0.9rem;
+}
+
+.technical-note {
+  box-sizing: border-box;
+  padding: 2rem;
+  border: 1px solid #d9e3e2;
+  border-radius: 10px;
+  background: #eff7f6;
+  color: #17454a;
+  text-align: center;
+}
+
+.note-label {
+  font-size: 0.95rem;
+}
+
+.technical-note .note-title {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.personal-note {
+  max-width: 720px;
+  margin: 0 auto 1rem;
+}
+
+[id] {
+  scroll-margin-top: 1rem;
+}
+
 .header {
   width: min(92%, 960px);
 }
