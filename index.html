@@ -48,7 +48,7 @@
       <p class="site-focus">Multilingual Training Data <span aria-hidden="true">·</span> Web Crawling <span aria-hidden="true">·</span> ML Systems</p>
       <div class="header-summary">
         <p>I build multilingual data pipelines for machine learning: crawling the web, extracting usable text and making processing reliable at scale.</p>
-        <p>My work spans ParaCrawl and MaCoCu, production NLP, Transformer-based music transcription and open-source systems.</p>
+        <p>My work spans ParaCrawl and MaCoCu, production NLP, data tooling for music-transcription research and open-source systems.</p>
       </div>
       <div class="header-links hero-actions">
         <a class="link" href="#projects" data-scroll>Selected work</a>
@@ -65,7 +65,7 @@
 
       <section id="projects">
         <div class="user-details">
-  <h1> Selected work </h1>
+  <h2>Selected work</h2>
 </div>
 <div class="user-projects" id="language-data">
   <div class="images-left project-logo-pair">
@@ -77,11 +77,14 @@
     <p class="project-kicker">Multilingual data engineering <span aria-hidden="true">·</span> 2017–2023</p>
     <p>I led engineering for multilingual web-data pipelines that processed over 1 PB of Common Crawl and other web data on HPC and cloud infrastructure, producing public corpora for machine translation and language-model research.</p>
     <p>As a core developer and maintainer of <strong>Bitextor</strong> and co-developer of <strong>Monotextor</strong>, I worked on the path from crawling and WARC ingestion to text extraction, language identification, alignment and cleaning. Bitextor produces parallel corpora; Monotextor focuses on monolingual text.</p>
+    <details class="project-details">
+    <summary>Selected engineering contributions</summary>
     <ul class="contribution-list">
       <li><a href="https://github.com/bitextor/bitextor/pull/128">Checkpoint-capable crawling and incremental recrawling</a>: integrated Heritrix and document hashes to avoid reprocessing previously seen content.</li>
       <li><a href="https://github.com/bitextor/bitextor/pull/203">Workflow restructuring</a>: reorganized the Snakemake pipeline as part of Bitextor 8.0.</li>
       <li><a href="https://github.com/bitextor/bitextor/pull/252">Alignment correctness</a>: revised L2 normalization in the TF-IDF document aligner.</li>
     </ul>
+    </details>
     <div class="project-links">
       <a class="project-link" href="https://github.com/bitextor/bitextor">Bitextor</a>
       <a class="project-link" href="https://github.com/bitextor/monotextor">Monotextor</a>
@@ -90,19 +93,19 @@
     <p class="project-evidence">Publications: <a href="https://aclanthology.org/2020.acl-main.417/">ParaCrawl (ACL 2020)</a> <span aria-hidden="true">·</span> <a href="https://aclanthology.org/2023.eamt-1.55/">MaCoCu (EAMT 2023)</a></p>
   </div>
 </div>
-<div class="user-projects" id="datatrove">
-  <div class="images-right technical-note">
-    <p class="note-label">Deduplication across implementations</p>
-    <p class="note-title">Rust <span aria-hidden="true">↔</span> Python</p>
-    <p>Deterministic cluster IDs<br>Binary-format compatibility<br>Historical-index semantics</p>
+<div class="user-projects" id="applied-ai">
+  <div class="images-right">
+    <img alt="CARAMEL" src="assets/img/logo-caramel.png" />
   </div>
   <div class="contents-left">
-    <h3>DataTrove</h3>
-    <p class="project-kicker">Training-data tooling <span aria-hidden="true">·</span> Contribution proposal</p>
-    <p>I proposed cluster-ID output for DataTrove’s Rust MinHash stage so the existing Python pipeline can consume its metadata. The change numbers components deterministically, independently of the union-find root, while preserving historical-index semantics.</p>
-    <p>The proposal includes Rust tests and Python interoperability checks, with S3 behavior exercised through Moto.</p>
-    <p>I also <a href="https://github.com/huggingface/datatrove/issues/521">isolated two initialization failures in the ReadabilityInscriptis extractor</a>, separating dependency validation from the sandbox’s empty-input warmup.</p>
-    <a class="project-link" href="https://github.com/huggingface/datatrove/pull/520">Read the proposal and review</a>
+    <h3>Data infrastructure at Treelogic</h3>
+    <p class="project-kicker">Data pipelines and platform integration</p>
+    <p>In CARAMEL, I contribute to the data platform supporting cardiovascular-prevention research, combining backend engineering with technical coordination across project partners. My work covers authenticated data access, ingestion workflows, interface definition and integration testing.</p>
+    <p>In CRYPTOTRACK, I develop Python search and scraping workflows that collect web information for cryptocurrency investigations, along with shared components for S3 ingestion, validation and logging. This connects source discovery and data collection with downstream NLP analysis.</p>
+    <div class="project-links">
+      <a class="project-link" href="https://caramel-project.eu/">CARAMEL</a>
+      <a class="project-link" href="https://www.incibe.es/index.php/industria-cpi/tree-technology-sa">CRYPTOTRACK at INCIBE</a>
+    </div>
   </div>
 </div>
 <div class="user-projects" id="multiscore">
@@ -111,10 +114,13 @@
   </div>
   <div class="contents-right">
     <h3>MultiScore</h3>
-    <p class="project-kicker">Transformer-based music transcription</p>
-    <p>I led engineering for a research project developing Transformer-based models for optical and audio music transcription within a shared end-to-end framework.</p>
-    <p>The task was to turn score images and musical audio into structured notation, bringing together model experimentation, evaluation and music-domain knowledge.</p>
-    <a class="project-link" href="https://sites.google.com/view/multiscore-project">Project and research</a>
+    <p class="project-kicker">Data annotation for music-transcription research</p>
+    <p>I built annotation tooling for MultiScore, a research project exploring optical and audio music transcription with deep learning. My contribution focused on preparing labelled music data for model training.</p>
+    <p>I developed <strong>mpvplaytime</strong>, a MuseScore plugin that inserts playback timestamps from MPV into a score. It lets annotators mark the correspondence between a musical performance and its written notation while listening.</p>
+    <div class="project-links">
+      <a class="project-link" href="https://github.com/multiscore/mpvplaytime">Annotation plugin</a>
+      <a class="project-link" href="https://sites.google.com/view/multiscore-project">Project and research</a>
+    </div>
   </div>
 </div>
 <div class="user-projects" id="crosspoint">
@@ -138,44 +144,34 @@
     <h3>Reverso Context</h3>
     <p class="project-kicker">Production NLP and retrieval <span aria-hidden="true">·</span> 2015–2017</p>
     <p>At Prompsit, I contributed to the data and retrieval pipelines behind Reverso Context, improving retrieval of multilingual examples from aligned corpora.</p>
-    <p>The product served more than seven million queries per day. My contribution was to its data and retrieval infrastructure within the wider Reverso ecosystem.</p>
+    <p>The product served more than seven million queries per day.</p>
     <a class="project-link" href="https://context.reverso.net/">Visit Reverso Context</a>
   </div>
 </div>
-<div class="user-projects" id="applied-ai">
-  <div class="images-right project-logo-pair">
-    <img alt="CARAMEL" src="assets/img/logo-caramel.png" />
-    <img alt="CRYPTOTRACK" src="assets/img/logo-incibe.png" />
-  </div>
-  <div class="contents-left">
-    <h3>Applied AI at Treelogic</h3>
-    <p class="project-kicker">Data access and reusable ingestion infrastructure</p>
-    <p>My work on CARAMEL and CRYPTOTRACK includes authenticated backend access to Trino/Delta Lake and integration with Airflow, Spark and MinIO.</p>
-    <p>I develop shared Python components for S3 ingestion and scraping, covering paginated discovery, validation and automated tests. The projects address cardiovascular risk assessment and analysis of cryptocurrency transactions.</p>
-    <div class="project-links">
-      <a class="project-link" href="https://caramel-project.eu/">CARAMEL</a>
-      <a class="project-link" href="https://www.incibe.es/index.php/industria-cpi/tree-technology-sa">CRYPTOTRACK</a>
-    </div>
-  </div>
+<div class="additional-contribution" id="datatrove">
+  <h3>DataTrove contribution proposal</h3>
+  <p>I proposed a change to make duplicate-document groups produced by DataTrove’s Rust implementation available to its existing Python pipeline, with tests for compatibility between the two implementations.</p>
+  <p><a href="https://github.com/huggingface/datatrove/pull/520">Read the proposal and its status</a> <span aria-hidden="true">·</span> <a href="https://github.com/huggingface/datatrove/issues/521">Extractor initialization bug report</a></p>
 </div>
 <div class="other-work">
-  <h2>Beyond the pipeline</h2>
-  <p class="personal-note">I teach programming and software engineering at the University of Alicante. Outside work, I make music and build retrocomputing hardware, including tools that connect Game Boys and MIDI.</p>
-  <p><a href="https://github.com/lpla/synccross">Game Boy music hardware</a> <span aria-hidden="true">·</span> <a href="https://github.com/lpla/gb-pcbs">PCB projects</a></p>
-  <h3>Other collaborative projects</h3>
+  <h2>Teaching</h2>
+  <p class="personal-note">I teach programming and software engineering at the University of Alicante.</p>
+  <h2>Other collaborative projects</h2>
   <div class="other-projects">
     <a href="https://communitas-project.eu/"><img alt="" src="assets/img/communitas.png"><span>COMMUNITAS</span></a>
     <a href="https://moderate-project.eu/"><img alt="" src="assets/img/moderate.png"><span>MODERATE</span></a>
     <a href="https://stream-he-project.eu/"><img alt="" src="assets/img/stream.png"><span>STREAM</span></a>
     <a href="https://ieecp.org/projects/ineexs/"><img alt="" src="assets/img/ineexs.png"><span>InEExS</span></a>
-    <a href="https://github.com/lpla/gb-pcbs"><img alt="" src="assets/img/pcb.png"><span>Open hardware</span></a>
   </div>
+  <h2>Music &amp; hardware</h2>
+  <p class="personal-note">Outside work, I make music and build retrocomputing hardware, including tools that connect Game Boys and MIDI.</p>
+  <p><a href="https://github.com/lpla/synccross">Game Boy music hardware</a> <span aria-hidden="true">·</span> <a href="https://github.com/lpla/gb-pcbs">PCB projects</a></p>
 </div>
 
       </section>
       <section id="cv">
 <div class="user-resume">
-  <h1> CV </h1>
+  <h2>CV</h2>
   <p>Detailed experience, education and selected publications are available in my CV.</p>
   <a class="project-link" aria-label="View my CV" target="_blank" rel="noopener noreferrer" href="CV.pdf">View CV</a>
 </div>
@@ -188,3 +184,4 @@
 <script src="assets/js/main.min.js"></script>
 
   </body>
+</html>
